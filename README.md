@@ -84,9 +84,9 @@ Pak-Auctions is a modern car auction platform built with React, Vite, Tailwind C
       resolve: {
       alias: {
       "@": path.resolve(__dirname, "src"),
-       },
-     },
-  });
+        },
+      },
+   });
 
 
 ## 🧩 Future Enhancements (Roadmap)
@@ -118,4 +118,5 @@ Pak-Auctions is a modern car auction platform built with React, Vite, Tailwind C
 
    Developed by M Zohaib
   📧 Email: zohaibrasheed983@gmail.com
+  
   💼 LinkedIn: https://www.linkedin.com/in/muhammad-zohaib-2786b8265/
