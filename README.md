@@ -35,8 +35,9 @@ Pak-Auctions is a modern car auction platform built with React, Vite, Tailwind C
 
 
 # Clone the repo
-git clone https://github.com/Zubii07/Pak-Auctions/tree/master
-cd frontend/car-auction
+   git clone https://github.com/Zubii07/Pak-Auctions/tree/master
+   
+   cd frontend/car-auction
 
 # Install dependencies
 npm install
