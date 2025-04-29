@@ -1,6 +1,6 @@
-# 🚗 AutoBid – Car Auction Platform
+# 🚗 Pak Auctions – Bidding  Platform
 
-AutoBid is a modern car auction platform built with React, Vite, Tailwind CSS, and ShadCN UI. It allows users to browse premium vehicles, place bids in real time, and list their own cars for auction — all in an elegant, responsive interface.
+Pak Auctions is a modern car auction platform built with React, Vite, Tailwind CSS, and ShadCN UI. It allows users to browse premium vehicles, place bids in real time, and list their own cars for auction — all in an elegant, responsive interface.
 
 ## 🔥 Live Demo
 
@@ -35,7 +35,7 @@ AutoBid is a modern car auction platform built with React, Vite, Tailwind CSS, a
 
 
 # Clone the repo
-git clone https://github.com/your-username/autobid.git
+git clone https://github.com/Zubii07/Pak-Auctions/tree/master
 cd frontend/car-auction
 
 # Install dependencies
