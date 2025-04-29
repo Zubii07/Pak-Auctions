@@ -52,7 +52,6 @@ src/
 ├── components/     # Reusable UI components
 ├── pages/          # Page-level components
 ├── assets/         # Static files (images, logos)
-├── hooks/          # Custom React hooks
 ├── utils/          # Helper functions
 ├── App.jsx         # Main application component
 └── main.jsx        # Application entry point
@@ -64,14 +63,15 @@ src/
 To use @/ for clean imports:
 
   # 1.Update your jsconfig.json:
-    {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
+ {
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"]
+      }
     }
   }
-}
+  
 
 
 # 2. Update vite.config.js:
