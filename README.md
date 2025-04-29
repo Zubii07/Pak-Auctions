@@ -1,6 +1,6 @@
-# 🚗 Pak Auctions – Bidding  Platform
+# 🚗 Pak-Auctions – Bidding Platform
 
-Pak Auctions is a modern car auction platform built with React, Vite, Tailwind CSS, and ShadCN UI. It allows users to browse premium vehicles, place bids in real time, and list their own cars for auction — all in an elegant, responsive interface.
+Pak-Auctions is a modern car auction platform built with React, Vite, Tailwind CSS, and ShadCN UI. It allows users to browse premium vehicles, place bids in real time, and list their own cars for auction — all in an elegant, responsive interface.
 
 ## 🔥 Live Demo
 
