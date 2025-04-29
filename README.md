@@ -40,27 +40,27 @@ Pak-Auctions is a modern car auction platform built with React, Vite, Tailwind C
    cd frontend/car-auction
 
 # Install dependencies
-npm install
+   npm install
 
 # Start development server
-npm run dev
+   npm run dev
 
 
 ## 🏗️ Project Structure
 
-src/
-├── components/     # Reusable UI components
-├── pages/          # Page-level components
-├── assets/         # Static files (images, logos)
-├── utils/          # Helper functions
-├── App.jsx         # Main application component
-└── main.jsx        # Application entry point
+    src/
+    ├── components/     # Reusable UI components
+    ├── pages/          # Page-level components
+    ├── assets/         # Static files (images, logos)
+    ├── utils/          # Helper functions
+    ├── App.jsx         # Main application component
+    └── main.jsx        # Application entry point
 
 
 ## ⚙️ Configuration Notes
 
 # ShadCN Alias Setup (@/)
-To use @/ for clean imports:
+  To use @/ for clean imports:
 
   # 1.Update your jsconfig.json:
  {
@@ -92,9 +92,13 @@ To use @/ for clean imports:
 ## 🧩 Future Enhancements (Roadmap)
 
    Integration with a real-time backend (Node,Express, Mongo DB)
+   
    Authentication system (Login/Signup)
+   
    Admin dashboard for managing auctions
+   
    User profile and bidding history
+   
    Live countdown timers for auction end-times
 
 ## 🤝 Contributing
