@@ -4,7 +4,7 @@ Pak-Auctions is a modern car auction platform built with React, Vite, Tailwind C
 
 ## 🔥 Live Demo
 
-👉 [View on Vercel](https://your-deployment-url.vercel.app)
+👉 [View on Vercel] https://pak-auctions.vercel.app/
 
 ---
 
