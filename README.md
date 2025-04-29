@@ -63,30 +63,30 @@ Pak-Auctions is a modern car auction platform built with React, Vite, Tailwind C
   To use @/ for clean imports:
 
   # 1.Update your jsconfig.json:
- {
-    "compilerOptions": {
-      "baseUrl": ".",
-      "paths": {
+     {
+       "compilerOptions": {
+       "baseUrl": ".",
+       "paths": {
         "@/*": ["src/*"]
+        }
       }
     }
-  }
   
 
 
 # 2. Update vite.config.js:
-  import path from "path";
-  import { defineConfig } from "vite";
-  import react from "@vitejs/plugin-react";
+    import path from "path";
+    import { defineConfig } from "vite";
+    import react from "@vitejs/plugin-react";
 
-   export default defineConfig({
-    plugins: [react()],
-    resolve: {
-    alias: {
+     export default defineConfig({
+      plugins: [react()],
+      resolve: {
+      alias: {
       "@": path.resolve(__dirname, "src"),
-    },
-  },
-});
+       },
+     },
+  });
 
 
 ## 🧩 Future Enhancements (Roadmap)
@@ -104,9 +104,13 @@ Pak-Auctions is a modern car auction platform built with React, Vite, Tailwind C
 ## 🤝 Contributing
 
    Contributions are welcome!
+   
    If you have suggestions, feature requests, or improvements, feel free to:
+   
      Fork the repository.
+     
      Create a new branch (git checkout -b feature/YourFeature).
+     
      Submit a Pull Request.
 
 
