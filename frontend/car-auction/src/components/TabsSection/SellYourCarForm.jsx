@@ -121,7 +121,14 @@ const SellYourCarForm = ({ currentStep, setCurrentStep }) => {
               </div>
               <div>
                 <label className="block text-sm font-medium mb-1">Location</label>
-                <Input placeholder="Enter location" />
+                <Select>
+                  <SelectTrigger><SelectValue placeholder="Select city" /></SelectTrigger>
+                  <SelectContent>
+                    {["Karachi", "Lahore", "Islamabad", "Rawalpindi", "Faisalabad", "Peshawar", "Multan", "Quetta", "Sialkot", "Gujranwala"].map((city) => (
+                      <SelectItem key={city} value={city.toLowerCase()}>{city}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
             </div>
           </div>

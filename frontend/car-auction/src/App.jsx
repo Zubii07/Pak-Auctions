@@ -66,7 +66,7 @@ export default function App() {
       priceInPKR: 62500 * PKR_CONVERSION_RATE,
       timeLeft: "2d 4h",
       mileage: 8750,
-      location: "Los Angeles, CA",
+      location: "Karachi",
       bids: 18
     },
     {
@@ -79,7 +79,7 @@ export default function App() {
       priceInPKR: 158000 * PKR_CONVERSION_RATE,
       timeLeft: "1d 12h",
       mileage: 5200,
-      location: "Miami, FL",
+      location: "Lahore",
       bids: 24
     },
     {
@@ -92,7 +92,7 @@ export default function App() {
       priceInPKR: 89000 * PKR_CONVERSION_RATE,
       timeLeft: "3d 8h",
       mileage: 12500,
-      location: "Chicago, IL",
+      location: "Islamabad",
       bids: 15
     },
     {
@@ -100,12 +100,12 @@ export default function App() {
       make: "Mercedes-Benz",
       model: "AMG GT",
       year: 2021,
-      image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1000&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1646194314870-6e25f74e6e60?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFtZyUyMGd0fGVufDB8fDB8fHww",
       currentBid: 125000,
       priceInPKR: 125000 * PKR_CONVERSION_RATE,
       timeLeft: "1d 6h",
       mileage: 9800,
-      location: "New York, NY",
+      location: "Rawalpindi",
       bids: 20
     },
     {
@@ -118,7 +118,7 @@ export default function App() {
       priceInPKR: 95000 * PKR_CONVERSION_RATE,
       timeLeft: "4d 2h",
       mileage: 3500,
-      location: "San Francisco, CA",
+      location: "Faisalabad",
       bids: 12
     },
     {
@@ -131,7 +131,7 @@ export default function App() {
       priceInPKR: 245000 * PKR_CONVERSION_RATE,
       timeLeft: "2d 12h",
       mileage: 4200,
-      location: "Las Vegas, NV",
+      location: "Peshawar",
       bids: 30
     }
   ];

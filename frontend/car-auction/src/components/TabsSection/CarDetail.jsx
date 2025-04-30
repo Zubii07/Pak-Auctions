@@ -4,29 +4,17 @@ import { Card } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import * as echarts from "echarts";
 
-// PKR to USD conversion rate as of April 29, 2025
-const PKR_CONVERSION_RATE = 282.5;
-
 const CarDetail = ({ countdown, similarVehicles }) => {
   useEffect(() => {
     const chartDom = document.getElementById("bidHistoryChart");
     if (chartDom) {
       const myChart = echarts.init(chartDom);
-      
-      // Convert USD values to PKR for the chart
-      const usdValues = [18500, 19200, 20100, 21500, 22300, 23100, 24500];
-      const pkrValues = usdValues.map(value => value * PKR_CONVERSION_RATE);
-      
       const option = {
         tooltip: { trigger: "axis" },
         xAxis: { type: "category", data: ["Apr 22", "Apr 23", "Apr 24", "Apr 25", "Apr 26", "Apr 27", "Apr 28"], axisLine: { lineStyle: { color: "#ddd" } }},
-        yAxis: { 
-          type: "value", 
-          axisLabel: { formatter: "PKR {value}" }, 
-          axisLine: { lineStyle: { color: "#ddd" } }
-        },
+        yAxis: { type: "value", axisLabel: { formatter: "${value}" }, axisLine: { lineStyle: { color: "#ddd" } }},
         series: [{
-          data: pkrValues,
+          data: [18500, 19200, 20100, 21500, 22300, 23100, 24500],
           type: "line",
           smooth: true,
           lineStyle: { color: "#3b82f6" },
@@ -38,9 +26,6 @@ const CarDetail = ({ countdown, similarVehicles }) => {
       window.addEventListener("resize", () => myChart.resize());
     }
   }, []);
-
-  // Convert $62,500 to PKR
-  const currentBidInPKR = 62500 * PKR_CONVERSION_RATE;
 
   return (
     <div className="flex flex-col lg:flex-row gap-8">
@@ -67,14 +52,14 @@ const CarDetail = ({ countdown, similarVehicles }) => {
               <span>8,750 miles</span>
               <span className="mx-2">•</span>
               <i className="fas fa-map-marker-alt mr-1"></i>
-              <span>Los Angeles, CA</span>
+              <span>Lahore</span>
             </div>
           </div>
 
           <div className="p-4 border-b">
             <div className="flex justify-between items-center mb-3">
               <div className="text-sm text-gray-500">Current Bid:</div>
-              <div className="text-2xl font-bold">PKR {currentBidInPKR.toLocaleString()}</div>
+              <div className="text-2xl font-bold">PKR 16,125,000</div>
             </div>
             <div className="grid grid-cols-4 gap-2 mb-4">
               <div className="bg-gray-100 rounded-lg p-2 text-center">
@@ -145,7 +130,7 @@ const CarDetail = ({ countdown, similarVehicles }) => {
                 <div className="flex justify-between items-center mb-3">
                   <div>
                     <div className="text-sm text-gray-500">Current Bid</div>
-                    <div className="text-xl font-bold">PKR {vehicle.priceInPKR.toLocaleString()}</div>
+                    <div className="text-xl font-bold">${vehicle.currentBid.toLocaleString()}</div>
                   </div>
                   <div className="text-right">
                     <div className="text-sm text-gray-500">Time Left</div>

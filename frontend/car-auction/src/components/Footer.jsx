@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 pt-6 mt-6 text-center text-gray-400 text-sm">
-          © 2025 PakAuction. All rights reserved.
+          © 2025 PakAuctions. All rights reserved.
         </div>
       </div>
     </footer>
